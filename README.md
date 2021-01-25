@@ -25,7 +25,7 @@ Therefore all the columns need to changed to appropriate data types to load them
 
 ![Changed datatypes](https://github.com/thotamohan/Machine-Learning-coursework/blob/master/datatypechanged.png)
 
-Here the database tables are stored in Postgres Database and the ETL jobs are automated using Apache AirFlow. and Docker is utilized to run the database locally.
+Here the database tables are stored in Postgres Database and the batch processing ETL jobs are automated using Apache AirFlow. and Docker is utilized to run the database locally.
 
 Steps to run the application on your database locally:
 
@@ -76,6 +76,15 @@ This should open AirFlow UI as follows, and the steps are given as images
 Ater the AirFlow DAG runs are succesful, the tables are stored in the Postgres on Docker. For each county, a table is created dynamically. A snapshot of the created tables are as follows:
 
 ![createdTables](https://github.com/thotamohan/Machine-Learning-coursework/blob/master/tables%20created.png)
+
+Here is a snapshot of the ALbany county table created
+
+Here all the records are stored as county tables in the database
+
+
+![Table preview](https://github.com/thotamohan/Machine-Learning-coursework/blob/master/Tables_preview.png)
+
+Here an assumption is made that, every day we are receving new data from API call, therefore we are processing all the obtained records from API response, and storing them in County tables.
 
 
 
