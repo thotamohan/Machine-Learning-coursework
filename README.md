@@ -35,7 +35,7 @@ Make sure you have Docker and Docker compose on the local system.
 
 The project file structure is as below:
 
-Image
+![ProjectDirectory](https://github.com/thotamohan/Machine-Learning-coursework/blob/master/project%20Directory.png)
 
 ## APPLICATION RUNNING STEPS
 
