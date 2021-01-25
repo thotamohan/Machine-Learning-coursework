@@ -73,6 +73,13 @@ This should open AirFlow UI as follows, and the steps are given as images
 ![Status of the DAG](https://github.com/thotamohan/Machine-Learning-coursework/blob/master/DAG%20status.png)
 
 
+Ater the AirFlow DAG runs are succesful, the tables are stored in the Postgres on Docker. For each county, a table is created dynamically. A snapshot of the created tables are as follows:
+
+![createdTables](https://github.com/thotamohan/Machine-Learning-coursework/blob/master/tables%20created.png)
+
+
+
+
 
 
 
