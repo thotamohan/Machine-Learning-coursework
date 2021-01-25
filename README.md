@@ -15,15 +15,15 @@ API request is made everyday at 9:00 AM through AirFlow Scheduled jobs.
 
 Resultant API response is stored in a dataframe with only selected columns as requested by analyst team. A snapshot of the dataframe is as follows:
 
-Image
+![Dataframe](https://github.com/thotamohan/Machine-Learning-coursework/blob/master/finalDF.png)
 
 But all the columns in the dataframe are stored as strings. It can be seen from below.
 
-Image
+![Datatype](https://github.com/thotamohan/Machine-Learning-coursework/blob/master/datatypes.png)
 
 Therefore all the columns need to changed to appropriate data types to load them into database tables. A snapshot of the changed data types.
 
-Image
+![Changed datatypes](https://github.com/thotamohan/Machine-Learning-coursework/blob/master/datatypechanged.png)
 
 Here the database tables are stored in Postgres Database and the ETL jobs are automated using Apache AirFlow. and Docker is utilized to run the database locally.
 
@@ -45,7 +45,7 @@ sudo docker-compose -f docker-compose-LocalExecutor.yml up -d
 
 This should create a postgres Container and a Airflow container in your docker environment. A snapshot of the created containers are as follows:
 
-Image
+![containers](https://github.com/thotamohan/Machine-Learning-coursework/blob/master/container%20images.png)
 
 After the containers are created make sure you give the same container Id in the RestAPI call operator code for connecting to PostgreSQL database in Docker.
 
@@ -61,7 +61,16 @@ Now Go to the browser, localhost:8080 or localhost:8081
 
 This should open AirFlow UI as follows, and the steps are given as images
 
-Image
+![Step1](https://github.com/thotamohan/Machine-Learning-coursework/blob/master/AirFlow%20UI.png)
+
+
+![Step2](https://github.com/thotamohan/Machine-Learning-coursework/blob/master/DAG%20UI.png)
+
+
+![Step3](https://github.com/thotamohan/Machine-Learning-coursework/blob/master/Triggering%20DAG.png)
+
+
+![Status of the DAG](https://github.com/thotamohan/Machine-Learning-coursework/blob/master/DAG%20status.png)
 
 
 
